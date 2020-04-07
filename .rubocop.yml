@@ -1,0 +1,22 @@
+# rubocop --auto-gen-config で自動的に生成される
+# inherit_from: .rubocop_todo.yml
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+AllCops:
+  Exclude:
+    - '.history/**/*'
+    - '.vscode/*'
+    - '.*'
+    - 'bin/*'
+    - 'config/**/*'
+    - 'Gemfile'
+    - 'node_modules/**/*'
+    - 'log/**/*'
+    - 'public/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
